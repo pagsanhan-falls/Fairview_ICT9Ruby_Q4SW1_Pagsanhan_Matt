@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Seatwork 1</title>
+</head>
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .login-box {
+            max-width: 400px;
+            margin: 80px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            background-color: #357924;
+            padding: 20px 30px;
+            border-radius: 10px;
+    
+        }
+    </style>
+
+    <script>
+function login() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    let checkfunction = document.getElementById("toggleCheck").checked;
+
+    switch(checkfunction) {
+        case true:
+            document.getElementById("instructions").innerHTML = "Enter your username and password to login.";
+        break;
+
+        case false:
+            document.getElementById("instructions").innerHTML = "";
+        break;
+    }
+
+    if (username === "admin" && password === "1234") {
+        alert("You have successfully logged in.");
+    } else {
+        alert("Wrong username or password.");
+    }
+}
+</script>
+<body>
+
+    <div class="container">
+
+        <h2><b>Login</b></h2>
+        <p id="instructions"></p>
+            <input type="checkbox" id="toggleCheck"> Show Instructions<br><br>
+
+            <input type="text" id="username" placeholder="Username"><br><br>
+            <input type="password" id="password" placeholder="Password"><br><br>
+
+    <button onclick="login()">Login</button>
+
+</div>
+    
+<script>
+//Use if-else statement for username and password verification. Use  === comparison operator and AND operator to check if condition is TRUE.
+
+
+//Use Switch Code for the checkbox
+
+function function_name_here() {
+        let variable_name= document.getElementById("checkboxID").checked; 
+         //when checked, it reads true
+
+        switch(variable_name) {
+            case true:
+                //use innerHTML to display a message
+            break;
+
+            case false:
+                //use innerHTML to show nothing. use quotation;
+            break;
+
+            //default may almost never needed since there is already true and false statement;
+ }
+}
+
+</script>
+</body>
+</body>
+</html
